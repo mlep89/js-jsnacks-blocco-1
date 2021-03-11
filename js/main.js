@@ -59,7 +59,7 @@ Dividi in due array separati le zucchine che misurano
 meno o più di 15cm.
 Infine stampa separatamente quanto pesano i due gruppi
 di zucchine */
-
+/*
 $(document).ready(function() {
     var bigZuk = [];
     var minZuk = [];
@@ -125,4 +125,16 @@ $(document).ready(function() {
         sommaTot +=(bigZuk[i]);
     }
     console.log(sommaTot);
-});
+}); */
+
+/* Scrivi una funzione che accetti una stringa come
+argomento e la ritorni girata (es. Ciao -> oaiC) */
+
+
+function myFunction() {
+    var x = document.getElementById("myText").value;
+    var y = x.split();
+    y.reverse();
+    document.getElementById("demo").innerHTML = y.join();
+}
+
