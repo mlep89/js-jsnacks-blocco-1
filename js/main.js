@@ -130,11 +130,17 @@ $(document).ready(function() {
 /* Scrivi una funzione che accetti una stringa come
 argomento e la ritorni girata (es. Ciao -> oaiC) */
 
-
+//prima modalità
 function myFunction() {
     var x = document.getElementById("myText").value;
-    var y = x.split();
-    y.reverse();
-    document.getElementById("demo").innerHTML = y.join();
+    var tmp = "";
+    for (i = x.length - 1; i >= 0; i--) {
+        tmp += x[i];
+    }
+    document.getElementById("demo").innerHTML = tmp;
 }
 
+//seconda modalità
+var y = document.getElementById("myText").value;
+var x = y.split("");
+console.log(x.reverse().join(""));
