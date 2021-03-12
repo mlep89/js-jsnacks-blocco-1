@@ -109,29 +109,34 @@ $(document).ready(function() {
 
     for (i = 0; i < zucchine.length; i++) {
         if (zucchine[i]["lunghezza"] > 15) {
-            bigZuk.push(zucchine[i].lunghezza);
+            bigZuk.push(zucchine[i]);
             
         }
         else {
-            minZuk.push(zucchine[i].lunghezza);
+            minZuk.push(zucchine[i]);
         }
     }
     console.log(bigZuk);
     console.log(minZuk);
 
     var sommaTot = 0;
+    var sommaTotDue = 0;
 
     for (i = 0; i < bigZuk.length; i++) {
-        sommaTot +=(bigZuk[i]);
+        sommaTot +=(bigZuk[i]["peso"]);
     }
     console.log(sommaTot);
+    for (i = 0; i < minZuk.length; i++) {
+        sommaTotDue +=(minZuk[i]["peso"]);
+    }
+    console.log(sommaTotDue);
 }); */
 
 /* Scrivi una funzione che accetti una stringa come
 argomento e la ritorni girata (es. Ciao -> oaiC) */
 
 //prima modalità
-function myFunction() {
+/*function myFunction() {
     var x = document.getElementById("myText").value;
     var tmp = "";
     for (i = x.length - 1; i >= 0; i--) {
@@ -141,6 +146,130 @@ function myFunction() {
 }
 
 //seconda modalità
-var y = document.getElementById("myText").value;
+/*var y = document.getElementById("myText").value;
 var x = y.split("");
 console.log(x.reverse().join(""));
+
+$('input').keyup(function(event){
+    console.log(event.which);
+    });*/
+
+
+
+/*var canzoni = {
+    canzone1 : {
+        "titolo" : "Sei un mito",
+        "Cantante" : "883",
+        "anno" : "2000"
+    },
+    canzone2 : {
+        "titolo" : "Il cielo è sempre più blu",
+        "Cantante" : "Rino Gaetano",
+        "anno" : "1970"
+    },
+    canzone3 : {
+        "titolo" : "Hanno ucciso l'uomo ragno",
+        "Cantante" : "883",
+        "anno" : "1990"
+    } 
+} 
+console.log(canzoni);
+
+canzoni.canzone4 = {}
+canzoni.canzone4.titolo = prompt("Inserisci un titolo");
+canzoni.canzone4.Cantante = prompt("Inserisci l'autore della canzone");
+canzoni.canzone4.anno = parseInt(prompt("Inserisci l'anno della canzone"));
+
+console.log(canzoni);*/
+
+/*var automobili = [{
+        "marca" : "fiat",
+        "modello" : "punto",
+        "colore" : "rosso",
+        "anno" : 2000,
+    },
+    {
+        "marca" : "lamborghini",
+        "modello" : "elettra",
+        "colore" : "rosa",
+        "cavalli" : 1,
+        "anno" : 2000,
+    },
+    {
+        "marca" : "lancia",
+        "modello" : "delta",
+        "colore" : "bianco",
+        "anno" : 1970,
+    },
+    {
+        "marca" : "bmw",
+        "modello" : "punto",
+        "colore" : "bianco",
+        "anno" : 2000,
+    },
+    {
+        "marca" : "maserati",
+        "modello" : "ghibli",
+        "colore" : "bianco",
+        "cavalli" : 180,
+        "anno" : 2000,
+    },
+    {
+        "marca" : "ferrari",
+        "modello" : "california",
+        "colore" : "rosso",
+        "cavalli" : 300,
+        "anno" : 2000,
+    },
+    {
+        "marca" : "porsche",
+        "modello" : "punto",
+        "colore" : "giallo",
+        "cavalli" : 200,
+        "anno" : 2000,
+    },
+];
+
+for (i=0; i < automobili.length; i++) {
+    console.log(automobili[i]);   
+}
+
+for (i=0; i < automobili.length; i++) {
+    delete automobili[i].cavalli;
+}
+console.log(automobili);
+
+for (i=0; i < automobili.length; i++) {
+    if (automobili[i].colore == "bianco") {
+        automobili[i].anno= 2020;
+    }
+}
+console.log(automobili);*/
+
+
+/*Dati due array (nomi[], cognomi[]) dovrete generare un terzo array
+(listaInvitati[]) composto da tre stringhe composte da 
+nome + ' ' + cognome.
+La coppia nome e cognome sarà casuale, 
+quindi l'elemento i verrà generato dalla funzione che genera 
+numeri random*/
+
+/*var nomi = ["marco", "paolo", "aldo", "giovanni", "giacomo"];
+var cognomi = ["bianchi", "rossi", "verdi", "gialli", "neri"];
+var listaInvitati = [];
+
+while (fintanto che questa condizione è vera cicla) {
+    listaInvitati
+}*/
+
+/*Crea un array di numeri interi e fai la somma di tutti gli
+elementi che sono in posizione dispari*/
+var numeri = [0,1,2,3,4,5,6,7,8,9,10];
+var sommaPari = 0;
+
+for (var i=0; i < numeri.length; i++) {
+    if (numeri.indexOf(numeri[i]) % 2 != 0) {
+        sommaPari  += numeri[i];
+    } 
+}
+console.log(sommaPari);
