@@ -254,14 +254,16 @@ La coppia nome e cognome sarà casuale,
 quindi l'elemento i verrà generato dalla funzione che genera 
 numeri random*/
 
-/*var nomi = ["marco", "paolo", "aldo", "giovanni", "giacomo"];
+var nomi = ["marco", "paolo", "aldo", "giovanni", "giacomo"];
 var cognomi = ["bianchi", "rossi", "verdi", "gialli", "neri"];
 var listaInvitati = [];
 
-while (fintanto che questa condizione è vera cicla) {
-    listaInvitati
-}*/
+var random = Math.floor(Math.random() * nomi.length);
+listaInvitati.push(nomi[random]);
+var random = Math.floor(Math.random() * cognomi.length);
+listaInvitati.push(cognomi[random]);
 
+console.log(listaInvitati.join(" "));
 /*Crea un array di numeri interi e fai la somma di tutti gli
 elementi che sono in posizione dispari*/
 /*var numeri = [0,1,2,3,4,5,6,7,8,9,10];
@@ -278,7 +280,7 @@ console.log(sommaPari);*/
 Aggiungi elementi casuali all’array che ha meno elementi,
 fino a quando ne avrà tanti quanti l’altro. */
 
-var box1 = ["pippo", "pluto", "paperino","qui", "quo", "qua"];
+/*var box1 = ["pippo", "pluto", "paperino","qui", "quo", "qua"];
 var box2 = ["walt", "disney"];
 
 
@@ -292,4 +294,22 @@ for (var i= 0; i < box1.length; i++) {
     }   
 }
 console.log(box1.length);
-console.log(box2.length);
+console.log(box2.length);*/
+
+
+/* Scrivi una funzione che fonda due array (aventi lo stesso
+numero di elementi) prendendo alternativamente gli
+elementi da uno e dall’altro
+es. [a,b,c], [1,2,3] → [a,1,b,2,c,3]. */
+
+/*var box1 = ["Chi", "Paolo", "Filippo"];
+var box2 = ["correggerà", "o", "?"];
+var box3 = fondaAlternativa(box1, box2);
+
+function fondaAlternativa (array1, array2) {
+    var risultante = array1.concat(array2) 
+    return
+}
+box3 = box1.concat(box2);
+console.log(box3);*/
+
