@@ -264,7 +264,7 @@ while (fintanto che questa condizione è vera cicla) {
 
 /*Crea un array di numeri interi e fai la somma di tutti gli
 elementi che sono in posizione dispari*/
-var numeri = [0,1,2,3,4,5,6,7,8,9,10];
+/*var numeri = [0,1,2,3,4,5,6,7,8,9,10];
 var sommaPari = 0;
 
 for (var i=0; i < numeri.length; i++) {
@@ -272,4 +272,24 @@ for (var i=0; i < numeri.length; i++) {
         sommaPari  += numeri[i];
     } 
 }
-console.log(sommaPari);
+console.log(sommaPari);*/
+
+/* Crea due array che hanno un numero di elementi diversi.
+Aggiungi elementi casuali all’array che ha meno elementi,
+fino a quando ne avrà tanti quanti l’altro. */
+
+var box1 = ["pippo", "pluto", "paperino","qui", "quo", "qua"];
+var box2 = ["walt", "disney"];
+
+
+for (var i= 0; i < box1.length; i++) {
+    if (box2.length < box1.length) {
+        var parolaAggiunta = prompt("Inserisci il nome di un personaggio dei cartoni animati");
+        box2.push(parolaAggiunta);
+    }
+    else {
+        alert("Entrambi gli array contengono il medesimo numero di elementi");
+    }   
+}
+console.log(box1.length);
+console.log(box2.length);
