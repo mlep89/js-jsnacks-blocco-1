@@ -324,3 +324,17 @@ un array e due numeri (“a” più piccolo di “b” e “b” grande al
 massimo quanto il numero di elementi dell’array).
 La funzione ritornerà un nuovo array con i valori che
 hanno la posizione compresa tra “a” e “b”*/
+var array1 = ["1","2","3","4","5","6"];
+var primo = 4;
+var secondo = 5;
+
+array1 = Prova(array1, primo,secondo);
+
+function Prova(array,a,b) {
+ var risultato = [];
+
+ for (i = a; i < b; i++) {
+     risultato.push(array[i]);
+ }
+ return risultato;
+}
